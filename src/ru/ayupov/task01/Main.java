@@ -14,11 +14,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Программа поиска минимального числа из двух чисел");
+
         System.out.println("Введите первое число:");
         Scanner scn = new Scanner(System.in);
         int numOne = scn.nextInt();
+
         System.out.println("Введите второе число:");
         int numTwo = scn.nextInt();
+
         if (numOne != numTwo) {
             int minNum = Math.min(numOne, numTwo);
             System.out.println("Минимальное число: " + minNum);
